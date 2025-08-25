@@ -1,19 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const userId = urlParams.get('user_id');
+        window.location.href = `https://192.168.100.204:8080?user_id=${userId}`;
+    </script>
 </head>
 <body>
-    <a href="http://192.168.100.204:8080">Test</a>
+    <p>Перенаправление...</p>
 </body>
-
 </html>
-
-
-
-
-
-
